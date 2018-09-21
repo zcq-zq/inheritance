@@ -1,0 +1,14 @@
+# inheritance
+熟悉公有继承：
+父类的public和protect成员的访问属性在子类中保持不变，但父类的private成员不可直接访问；
+
+子类中的成员函数可以直接访问父类中的public和protected成员，但不能直接访问父类的private成员；
+
+通过子类的对象只能访问父类的public成员。
+
+了解私有继承：
+父类的public和protect成员都以private身份出现在子类中，但父类的private成员不可直接访问；
+
+子类中的成员函数可以直接访问父类中的public和protected成员，但不能直接访问父类的private成员；
+
+通过子类的对象不能直接访问父类的任何成员。
