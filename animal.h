@@ -7,7 +7,7 @@ namespace iotek
 	{
 	public:
 		Animal(int age);
-		~Animal();
+		virtual ~Animal();
 
 		void setAge(int age);
 		int getAge()const;
