@@ -11,6 +11,7 @@ namespace iotek
 
 		void setAge(int age);
 		int getAge()const;
+		virtual void makeSound()const;//虚函数
 
 	private:
 		int m_age;
@@ -24,6 +25,8 @@ namespace iotek
 
 		int getColor()const;
 		void setColor(int color);
+		void makeSound()const;
+		
 	private:
 		int m_color;
 	};
@@ -35,6 +38,8 @@ namespace iotek
 		~Dog();
 		int getWeight()const;
 		void setWeight(int weight);
+		void makeSound()const;
+		
 	private:
 		int m_weight;
 	};
