@@ -21,9 +21,13 @@ void Animal::setAge(int age)
 {
 	m_age = age;
 }
+void Animal::makeSound()const
+{
+	cout << "Animal make sound" << endl;
+}
 
 Cat::Cat(int age, int color)
-	:Animal(age),m_color(color)  //��ʼ�����ࣻ
+	:Animal(age),m_color(color)  //³õÊ¼»¯¸¸Àà£»
 {
 	cout << "Cat constructing" << endl;
 }
@@ -41,6 +45,11 @@ int Cat::getColor()const
 void Cat::setColor(int color)
 {
 	m_color = color;
+}
+
+void Cat::makeSound()const
+{
+	cout << "Cat make sound" << endl;
 }
 
 Dog::Dog(int age, int weight)
@@ -62,4 +71,9 @@ int Dog::getWeight()const
 void Dog::setWeight(int weight)
 {
 	m_weight = weight;
+}
+
+void Dog::makeSound()const
+{
+	cout << "Dog make sound" << endl;
 }
